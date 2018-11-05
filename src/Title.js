@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { TimelineMax } from "gsap/TweenMax";
-import ReactSplitText from "./ReactSplitText";
+import ReactSplitText from "./lib";
 
 class Title extends Component {
   constructor(props) {

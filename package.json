@@ -3,7 +3,22 @@
   "version": "1.0.0",
   "description": "",
   "keywords": [],
-  "main": "src/index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+    "files": [
+      "dist",
+      "README.md"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/arraqib/react-split-text"
+    },
+
+  "peerDependencies": {
+    "prop-types": "15.6.2",
+    "react": "16.5.2",
+    "react-dom": "16.5.2"
+  },
   "dependencies": {
     "gsap": "2.0.2",
     "prop-types": "15.6.2",
@@ -11,10 +26,12 @@
     "react-dom": "16.5.2",
     "react-scripts": "2.0.3"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "babel-cli": "6.26.0"
+  },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files --ignore __tests__,spec.js,test.js,__snapshots__",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
