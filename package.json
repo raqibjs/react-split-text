@@ -5,15 +5,14 @@
   "keywords": [],
   "main": "dist/index.js",
   "module": "dist/index.js",
-    "files": [
-      "dist",
-      "README.md"
-    ],
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/arraqib/react-split-text"
-    },
-
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arraqib/react-split-text"
+  },
   "peerDependencies": {
     "prop-types": "15.6.2",
     "react": "16.5.2",
